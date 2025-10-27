@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер привычек - Главная</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Трекер привычек</h1>
+        <nav>
+            <ul>
+                <li><a href="start.html">Главная</a></li>
+                <li><a href="additive.html">Добавить привычку</a></li>
+                <li><a href="statistics.html">Статистика</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Мои привычки</h2>
+
+        <div class="daily-summary">
+            <p>Выполнено привычек сегодня: <span id="completed-today">0</span> из <span id="total-habits">0</span></p>
+        </div>
+
+        <ul id="habit-list">
+            <li class="habit-item" data-habit-id="1">
+                <input type="checkbox" id="habit-1-done" class="habit-checkbox" data-habit-id="1">
+                <label for="habit-1-done">Утренняя зарядка</label>
+                <span class="habit-streak">Серия: 5 дней</span>
+                <div class="habit-actions">
+                    <button class="edit-btn" data-habit-id="1" title="Редактировать">Изменить</button>
+                    <button class="delete-btn" data-habit-id="1" title="Удалить">Отмена</button>
+                </div>
+            </li>
+            <li class="habit-item" data-habit-id="2">
+                <input type="checkbox" id="habit-2-done" class="habit-checkbox" data-habit-id="2">
+                <label for="habit-2-done">Чтение 30 минут</label>
+                <span class="habit-streak">Серия: 12 дней</span>
+                <div class="habit-actions">
+                    <button class="edit-btn" data-habit-id="2" title="Редактировать">Изменить</button>
+                    <button class="delete-btn" data-habit-id="2" title="Удалить">Отмена</button>
+                </div>
+            </li>
+            <li class="habit-item" data-habit-id="3">
+                <input type="checkbox" id="habit-3-done" class="habit-checkbox" data-habit-id="3">
+                <label for="habit-3-done">Выпить 2 литра воды</label>
+                <span class="habit-streak">Серия: 2 дня</span>
+                <div class="habit-actions">
+                    <button class="edit-btn" data-habit-id="3" title="Редактировать">Изменить</button>
+                    <button class="delete-btn" data-habit-id="3" title="Удалить">Отмена</button>
+                </div>
+            </li>
+            <!-- Здесь будут добавляться новые привычки с помощью JavaScript -->
+        </ul>
+
+        <p id="no-habits-message" style="display: none;">У вас пока нет привычек. Добавьте свою первую привычку!</p>
+    </main>
+
+    <footer>
+        <p> FLUTTcmd </p>
+    </footer>
+
+
+    <script src="functional_script.js"></script>
+</body>
+</html>
