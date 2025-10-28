@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер привычек - Статистика</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Трекер привычек</h1>
+        <nav>
+            <ul>
+                <li><a href="start.html">Главная</a></li>
+                <li><a href="additive.html">Добавить привычку</a></li>
+                <li><a href="statistics.html">Статистика</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Статистика</h2>
+
+        <div id="stats-overview">
+            <h3>Общая статистика</h3>
+            <p>Всего привычек: <span id="total-habits-stats">0</span></p>
+            <p>Средний процент выполнения: <span id="overall-success-rate">0%</span></p>
+        </div>
+
+        <section id="habit-stats-list">
+            <article class="habit-stats-item">
+                <h3>Название привычки</h3>
+                <p>Текущая серия: <span class="current-streak">10 дней</span></p>
+                <p>Максимальная серия: <span class="max-streak">25 дней</span></p>
+                <p>Процент выполнения за месяц: <span class="monthly-success">85%</span></p>
+
+                <div class="chart-container">
+                    <h4>Прогресс выполнения</h4>
+                    <canvas id="habit-progress-chart-1"></canvas>
+                </div>
+            </article>
+        </section>
+
+        <p id="no-stats-message" style="display: none;">У вас пока нет статистики. Начните отслеживать привычки</p>
+    </main>
+
+    <footer>
+        <p>FLUTTcmd</p>
+    </footer>
+
+    <script src="functional_script.js"></script>
+</body>
+</html>
